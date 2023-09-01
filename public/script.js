@@ -15,7 +15,6 @@ submit.addEventListener("click", async (e) => {
   });
 
   jsonOutput.textContent = JSON.stringify(jsonData, null, 2);
-  console.log("heh");
   try {
     const response = await fetch("/mockapi");
     const responseData = await response.json();
